@@ -28,6 +28,12 @@ a {
   text-decoration: none;
 }
 
+body {
+    display: block;
+    margin:0px;
+}
+
+
 .main-nav {
   background-color: #00bfff;
   display: flex;
@@ -43,6 +49,7 @@ a {
 .main-nav {
   display: -webkit-flex;
   display: flex;
+  margin: 0;
 }
 .main-nav li:first-child {
   margin-right: auto;
@@ -57,38 +64,39 @@ a {
 	text-decoration: none;
 }
 .main-nav .logo {
-
+  font-size: 25px;
+  color: #191970;
+  font-family: script;
   background: #00bfff;
 }
 
-
-.col{
-  flex-grow: 1; 50%
-  flex-basis: 200px;
-}
-.container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/*  Columns */
+.row{
+  font-weight: bold;
 }
 
+/*  Columns */
+/*  slideshow  */
 
-#slideshow {
-    margin: 50px auto;
-    position: relative;
-    width: 240px;
-    height: 240px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+.slide {
+	width: 400px;
+	height: 200px;
+	position: relative;
 }
 
-#slideshow > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+.slide .item {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
+.slide .item.next {
+	left: 50px;
+	opacity: 0;
+}
+
 
 @media all and (max-width:800px){
   .main-nav
@@ -112,4 +120,13 @@ a {
     border-top:2px solid rgba(255,255,255,.2);
       border-bottom:2px solid rgba(0,0,0,.1);
   }
+}
+
+footer{
+ padding: 2em;
+ height: 100px;
+ background-color: #eee;
+ margin-top: 3.5em;
+ position: relative;
+
 }
