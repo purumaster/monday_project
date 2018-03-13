@@ -77,6 +77,37 @@ body {
   background: #00bfff;
 }
 
+h1{
+  text-align: center;
+  margin-top:5rem;
+  margin-bottom: 3rem;
+ }
+
+
+.parent{
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child{
+  width:60px;
+}
+
+.Session1{
+  background-color: red;
+}
+.Session2{
+  background-color: blue;
+}
+.Session3{
+  background-color: green;
+}
+.Session4{
+  background-color: purple;
+}
+
 /* Scroll */
 #myBtn {
   display: none;

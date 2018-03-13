@@ -34,8 +34,10 @@ a {
 }
 
 body {
+   text-align: center;
     display: block;
     margin:0px;
+
 }
 
 .global-nav {
@@ -84,8 +86,34 @@ h1{
   color: black;
   font-family: script;
 
+  parent{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
+  .parent{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child{
+    width:60px;
+  }
+
+  .child1{
+    background-color: red;
+  }
+  .child2{
+    background-color: blue;
+  }
+  .child3{
+    background-color: green;
+  }
+
 
 /* Scroll */
 #myBtn {
