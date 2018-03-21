@@ -76,48 +76,91 @@ body {
   font-family: script;
   background: #00bfff;
 }
+
+
 /*===========================================
-Flexbox
+slideshow
 ===========================================*/
-
-h1{
-   text-align: center;
-   text-indent : 12px;
-   padding-top : 100px;
-   padding-left : 30px;
-   padding-right : 30px;
-   padding-bottom : 30px;
-   background: lighten(brown, 5%);
-
+.slideshow {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
 }
 
-.inner{
-    width: 900px;
-    height: 2px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-}
-
-.contact{
-  background-color: #00ced1;
-  border-left:  1px double #556b2f;
-  border-right : 1px double #556b2f;
-  box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
-              0 0 4px rgba(0, 0, 0, .8) inset,
-              2px 2px 2px rgba(0, 0, 0, .4);
-
-  color: #fff;
-  margin: 2em 0;
-  padding: 2em;
-}
-#c1 {
+ .slider{
+  width: 100vw;
+  padding: 10rem;
   text-align: center;
 }
 
+.centered-text{
+display: block;
+margin: 0 auto;
+text-align: center;
+}
+
+div.centered-text h3{
+font-size: 3rem;
+}
+
+.margin, h3{
+ font-size: 5 rem;
+}
+
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+}
+
+.wrap{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+   color: #00bfff;
+}
+/*===========================================
+slideshow
+===========================================*/
+
+/* 3 Columns */
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+
+  left: 0px;
+  width: 50%;
+}
+
+.right-half {
+  background-color: #b6701e;
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+/* Scroll */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* Scroll */
 
 @media all and (max-width:800px){
   .main-nav
@@ -141,3 +184,14 @@ h1{
     border-top:2px solid rgba(255,255,255,.2);
       border-bottom:2px solid rgba(0,0,0,.1);
   }
+
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    text-align: center;
+}

@@ -27,7 +27,7 @@
  </div>
 
 <!-- slideshow  -->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-wrap="false">
     <div class="title">The Louisville Academy for ESL
     </div>
   <div class="carousel-inner" style="height:200px;">
@@ -40,7 +40,7 @@
     <div class="carousel-item  slider" style.padding = "10px 20px 30px" style="height: 150px;">
       <h3 class="d-block w-100" style="color: #228b22; font-size: 3rem;line-height: 7px;">for ESL</h3>
     </div>
-    <div class="carousel-item slider" style.padding = "10px 20px 30px" style="height: 150px;">
+    <div class="carousel-item slider lastImg" style.padding = "10px 20px 30px" style="height: 150px;">
       <h3 class="d-block w-100" style="color: #000080; font-size: 3rem;line-height: 7px;">LAESL</h3></div>
 
   </div>
@@ -56,6 +56,8 @@ $(function () {
             if (!$(currImgContainer).hasClass('lastImg')) {
                 $('.carousel-inner').removeClass('carousel-inner').next().addClass('carousel-inner');
                 setTimeout(playSlideShow, 2000);
+            } else {
+                $('.carousel-inner').removeClass('carousel-inner');
             }
         }
     });
@@ -72,13 +74,13 @@ $(function () {
 </div>
 <div class="box2">
   <h2 style="font-size:2.0rem;">LAESL Classes</h2>
-  <p style="font-size:1.2rem;">-Are FREE</p>
-  <p style="font-size:1.2rem;">-Meet for 8 weeks</p>
-  <p style="font-size:1.2rem;">-Are available in the morning, afternoon, and evening</p>
+  <p style="font-size:1.2rem;">♦ Are FREE</p>
+  <p style="font-size:1.2rem;">♦ Meet for 8 weeks ( 16 times )</p>
+  <p style="font-size:1.2rem;">♦ Are available in the morning, afternoon, and evening</p>
   </div>
   <div class="box3">
     <h2 style="font-size:2.0rem;">Class schedule for 2018-2019</h2>
-    <p style="font-size:1.2rem;">The registration will start on July 17th.</p>
+    <p style="font-size:1.2rem;">The registration will start on<br>July 17th.</p>
     <p style="font-size:1.2rem;">The schedule is coming soon.</p>
   </div>
 

@@ -36,6 +36,7 @@ a {
 body {
     display: block;
     margin:0px;
+
 }
 
 .global-nav {
@@ -88,7 +89,14 @@ h1{
    padding-right : 30px;
    padding-bottom : 30px;
    background: lighten(brown, 5%);
-
+    color: skyblue;
+    font-family: 'Lobster';
+    text-shadow: 4px 3px 0px #fff,
+                 9px 8px 0px rgba(0,0,0,0.15);
+    span {
+      display: block;
+      transform: rotate(-7.5deg);
+  }
 }
 
 .inner{
@@ -102,8 +110,9 @@ h1{
     margin: auto;
 }
 
-.contact{
-  background-color: #00ced1;
+
+.Session1{
+  background-color: #8fbc8f;
   border-left:  1px double #556b2f;
   border-right : 1px double #556b2f;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
@@ -114,8 +123,15 @@ h1{
   margin: 2em 0;
   padding: 2em;
 }
+
 #c1 {
   text-align: center;
+}
+#c2 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
 
 
