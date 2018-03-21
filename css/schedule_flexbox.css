@@ -36,6 +36,7 @@ a {
 body {
     display: block;
     margin:0px;
+
 }
 
 .global-nav {
@@ -76,36 +77,91 @@ body {
   font-family: script;
   background: #00bfff;
 }
+/*===========================================
+Flexbox
+===========================================*/
 
 h1{
-  text-align: center;
-  margin-top:5rem;
-  margin-bottom: 3rem;
- }
+   text-align: center;
+   text-indent : 12px;
+   padding-top : 50px;
+   padding-left : 30px;
+   padding-right : 30px;
+   padding-bottom : 50px;
+   background: lighten(brown, 5%);
+    color: skyblue;
+    font-family: 'Lobster';
+    text-shadow: 4px 3px 0px #fff,
+                 9px 8px 0px rgba(0,0,0,0.15);
+    span {
+      display: block;
+      transform: rotate(-7.5deg);
+
+
+  }
+}
+
+
 
 
 .parent{
-  background-color: #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.child{
-  width:60px;
+  padding-top : 30px;
+  padding-left : 30px;
+  padding-right : 30px;
+  padding-bottom : 30px;
 }
 
 .Session1{
-  background-color: red;
+  background-color: #ee82ee;
+  border-left:  1px double #8b008b;
+  border-right : 1px double #8b008b;
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
+              0 0 4px rgba(0, 0, 0, .8) inset,
+              2px 2px 2px rgba(0, 0, 0, .4);
+  
+  color: #fff;
+  margin: 2em 0;
+  padding: 2em;
 }
+
 .Session2{
-  background-color: blue;
+  background-color: #ee82ee;
+  border-left:  1px double #8b008b;
+  border-right : 1px double #8b008b;
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
+              0 0 4px rgba(0, 0, 0, .8) inset,
+              2px 2px 2px rgba(0, 0, 0, .4);
+
+  color: #fff;
+  margin: 2em 0;
+  padding: 2em;
 }
 .Session3{
-  background-color: green;
+  background-color: #ee82ee;
+  border-left:  1px double #8b008b;
+  border-right : 1px double #8b008b;
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
+              0 0 4px rgba(0, 0, 0, .8) inset,
+              2px 2px 2px rgba(0, 0, 0, .4);
+
+  color: #fff;
+  margin: 2em 0;
+  padding: 2em;
 }
 .Session4{
-  background-color: purple;
+  background-color: #ee82ee;
+    border-left:  1px double #8b008b;
+    border-right : 1px double #8b008b;
+    border-bottom : 2px  double #8b008b;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, .4) inset,
+                0 0 4px rgba(0, 0, 0, .8) inset,
+                2px 2px 2px rgba(0, 0, 0, .4);
+    color: #fff;
+    margin: 2em 0;
+    padding: 2em;
 }
 
 /* Scroll */

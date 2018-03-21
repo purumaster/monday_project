@@ -91,6 +91,7 @@ slideshow
   width: 100vw;
   padding: 10rem;
   text-align: center;
+
 }
 
 .centered-text{
@@ -99,44 +100,92 @@ margin: 0 auto;
 text-align: center;
 }
 
-div.centered-text h3{
-font-size: 3rem;
-}
 
-.margin, h3{
- font-size: 5 rem;
-}
 
 .slick-slide {
   text-align: center;
   color: #419be0;
 }
 
-.wrap{
+.title{
    text-align: center;
-   font-size: 2rem;
+   position: relative;
+   top:55px;
+   font-size: 4rem;
    font-weight: bold;
+
    color: #00bfff;
 }
 /*===========================================
 slideshow
 ===========================================*/
 
-/* 3 Columns */
-.row{
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-top:10rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: black;
+/* 4 Columns */
+
+.parent {
+	width: 900px;/*boxが横に並ぶだけの幅を確保*/
+	overflow: hidden;/*wrapperからはみ出る部分を非表示にする*/
+  padding-top: 100px;
+  margin-right: auto;
+  margin-left : auto;
+  margin-top: 100px;
+  flex-direction: row;
 }
 
- h3{
-  font-weight: bold;
-  font-size: 1.8em;
-  color: black;
+.box1 {
+	width: 780px;/*内容領域の幅。下の左右のpaddingを合わせてボックスが200pxになります。*/
+  height: 200px;
+  padding: 0.5em 1em;
+    margin: 2em ;
+    color: #fff;
+    background: #cd853f;
+    border-top: solid 5px #800000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);/*上下左右に10pxの内余白*/
+	float: center;/*横並びにしています*/
+  margin-right: 50px;
 }
+.box2 {
+	width: 350px;/*内容領域の幅。下の左右のpaddingを合わせてボックスが200pxになります。*/
+  padding: 0.5em 1em;
+    margin: 2em ;
+    color: #fff;
+    background: #cd853f;
+    border-top: solid 5px #800000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);/*上下左右に10pxの内余白*/
+	float: left;/*横並びにしています*/
+  margin-right: : 50px;
+}
+.box3 {
+	width: 350px;/*内容領域の幅。下の左右のpaddingを合わせてボックスが200pxになります。*/
+  padding: 0.5em 1em;
+    margin: 2em ;
+    color: #fff;
+    background: #cd853f;
+    border-top: solid 5px #800000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);/*上下左右に10pxの内余白*/
+	float: right;/*横並びにしています*/
+  margin-left: 50px;
+}
+.box4 {
+  text-align:left;
+  width:780px;/*内容領域の幅。下の左右のpaddingを合わせてボックスが200pxになります。*/
+  height: 400px;
+  padding: 0.5em 1em;
+    margin: 2em ;
+    color: #fff;
+    background: #cd853f;
+    border-top: solid 5px #800000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);/*上下左右に10pxの内余白*/
+	float: left;
+}
+.box4 iframe{
+  position: absolute;
+}
+
+
+
+/* 4 Columns */
+
 /* Scroll */
 #myBtn {
   display: none;
@@ -158,6 +207,16 @@ slideshow
   background-color: #555;
 }
 /* Scroll */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  color: black;
+  text-align: center;
+}
 
 @media all and (max-width:800px){
   .main-nav
@@ -181,16 +240,3 @@ slideshow
     border-top:2px solid rgba(255,255,255,.2);
       border-bottom:2px solid rgba(0,0,0,.1);
   }
-
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-top: 10rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    background-color: #eee;
-    color: red;
-    text-align: center;
-}
