@@ -36,6 +36,9 @@ a {
 body {
     display: block;
     margin:0px;
+    background-image: url('../img/kentucky-473693_1280.jpg');
+    background-size: cover;
+
 }
 
 .global-nav {
@@ -91,7 +94,6 @@ slideshow
   width: 100vw;
   padding: 10rem;
   text-align: center;
-
 }
 
 .centered-text{
@@ -128,7 +130,7 @@ slideshow
   padding-top: 100px;
   margin-right: auto;
   margin-left : auto;
-  margin-top: 100px;
+  margin-top: 50px;
   flex-direction: row;
 }
 
@@ -181,6 +183,7 @@ slideshow
 .box4 iframe{
   position: absolute;
 }
+
 
 
 

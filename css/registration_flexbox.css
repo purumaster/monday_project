@@ -88,15 +88,6 @@ h1{
    padding-left : 30px;
    padding-right : 30px;
    padding-bottom : 30px;
-   background: lighten(brown, 5%);
-    color: skyblue;
-    font-family: 'Lobster';
-    text-shadow: 4px 3px 0px #fff,
-                 9px 8px 0px rgba(0,0,0,0.15);
-    span {
-      display: block;
-      transform: rotate(-7.5deg);
-  }
 }
 
 .inner{
@@ -129,6 +120,7 @@ h1{
 }
 #c2 {
   text-align: left;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 400px;
