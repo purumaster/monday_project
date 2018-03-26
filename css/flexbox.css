@@ -230,8 +230,16 @@ slideshow
   .main-nav a:hover{
     background-color: lighten(goldenrod,10%);
   }
+
+  .parent {
+    font-weight: 500;
+    line-height: 1.0;
+
+  }
+
+
 }
-@media all and (max-width:500px){
+@media all and (max-width:480px){
   .main-nav{
     flex-flow:column wrap;
     padding:0;
